@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration name="Plum 15.0" type="test">
+   <req-txt>
+   <![CDATA[
+
+   ]]>
+   </req-txt>
+
+   <!--
+   =============================
+   Test Configuration Parameters
+   =============================
+   -->
+   <!-- common parameters -->
+   <parameter name="log-path">/../logs/</parameter>
+   <parameter name="power-on">On</parameter>
+   <parameter name="connection-type">AC</parameter>
+   <parameter name="power-off">Off</parameter>
+   <parameter name="new-patient">true</parameter>
+   <parameter name="cca-name">MedSurg Adult</parameter>
+   <parameter name="key-line">line</parameter>
+   <parameter name="key-medication">medication</parameter>
+   <parameter name="key-screen-name">screenName</parameter>
+   <parameter name="key-initial-screen">initialScreenName</parameter>
+   <parameter name="key-target-screen">targetScreenName</parameter>
+   <parameter name="medication-ml">["Vancomycin PREOP", 1.5, "SID_GRAMS", 300.0]</parameter>
+   <parameter name="medication-dc">["Bumetanide (Bumex)", 18.0, "SID_MG", 180.0]</parameter>
+   <parameter name="ms-values-ml">[2, 2, 2, 2]</parameter>
+   <parameter name="ms-values-dc">[1, 1, 1, 1]</parameter>
+   <parameter name="line-a">A</parameter>
+   <parameter name="line-b">B</parameter>
+   <parameter name="screen-name-s22">S22</parameter>
+   <parameter name="screen-name-s126a">S126a</parameter>
+   <parameter name="screen-name-s32-ms-mlpg1">S32_MS_mLpg1</parameter>
+   <parameter name="screen-name-s32-ms-dcpg1">S32_MS_DCpg1</parameter>
+   <parameter name="screen-name-s32-ms-mlpg2">S32_MS_mLpg2</parameter>
+   <parameter name="screen-name-s32-ms-dcpg2">S32_MS_DCpg2</parameter>
+   <parameter name="screen-name-s43-ms-mlpg1">S43_MS_mLpg1</parameter>
+   <parameter name="screen-name-s43-ms-dcpg1">S43_MS_DCpg1</parameter>
+   <parameter name="screen-name-s43-ms-mlpg2">S43_MS_mLpg2</parameter>
+   <parameter name="screen-name-s43-ms-dcpg1">S43_MS_DCpg2</parameter>
+   <parameter name="rate-value">52</parameter>
+   <parameter name="dose-value">0.8</parameter>
+   <parameter name="vtbi-value">2</parameter>   
+   <parameter name="step-number-1">1</parameter>
+   <parameter name="step-number-3">3</parameter>
+   <parameter name="step-number-4">4</parameter>
+   <parameter name="step-number-9">9</parameter>
+   <parameter name="step-number-10">10</parameter>
+   <parameter name="expected-value">0</parameter>
+   <parameter name="start-hardkey">START</parameter>
+   <parameter name="therapy-format-ml">rvs</parameter>
+   <parameter name="therapy-format-dc">dvs</parameter>
+   <parameter name="rate-dose-fields">["evRateStep", "evDoseStep"]</parameter>
+   <parameter name="initial-value">0</parameter>
+   <parameter name="increment-value">1</parameter>
+   <parameter name="max-value">50</parameter>
+   <parameter name="up-hardkey">SELECT_UP</parameter>
+   <parameter name="navigation-hash">{"line"           => nil,
+                                      "medication"     => nil,
+                                      "indicationName" => nil,
+                                      "dosingUnit"     => nil,
+                                      "clearLine"      => true,
+                                      "delayStart"     => nil}</parameter>
+   <parameter name="multistep-therapy-hash">{"line"           => nil,
+                                             "clearLine"      => true,
+                                             "medication"     => nil,
+                                             "dosingUnit"     => nil,
+                                             "concentration"  => nil,
+                                             "indicationName" => nil,
+                                             "concParams"     => nil,
+                                             "bsaParams"      => nil,
+                                             "doseValues"     => nil,
+                                             "rateValues"     => nil,
+                                             "vtbiValues"     => [2, 2, 2, 2],
+                                             "durationValues" => nil,
+                                             "deliveryMode"   => nil,
+                                             "callback"       => nil,
+                                             "delayStart"     => nil,
+                                             "standBy"        => nil}</parameter>
+   <!-- test_case_1 -->
+   <parameter name="test-case-1">test_case_PL-DID-SWFU-1211_1</parameter>
+   <parameter name="expected-result-1">[true]</parameter>
+
+   <!-- test_case_2 -->
+   <parameter name="test-case-2">test_case_PL-DID-SWFU-1211_2</parameter>
+   <parameter name="expected-result-2">[true]</parameter>
+
+   <!-- test_case_3 -->
+   <parameter name="test-case-3">test_case_PL-DID-SWFU-1211_3</parameter>
+   <parameter name="expected-result-3">[true]</parameter>
+
+   <!-- test_case_4 -->
+   <parameter name="test-case-4">test_case_PL-DID-SWFU-1211_4</parameter>
+   <parameter name="expected-result-4">[true]</parameter>
+
+   <!-- test_case_5 -->
+   <parameter name="test-case-5">test_case_PL-DID-SWFU-1211_5</parameter>
+   <parameter name="expected-result-5">[true]</parameter>
+
+   <!-- test_case_6 -->
+   <parameter name="test-case-6">test_case_PL-DID-SWFU-1211_6</parameter>
+   <parameter name="expected-result-6">[true]</parameter>
+
+   <!-- test_case_7 -->
+   <parameter name="test-case-7">test_case_PL-DID-SWFU-1211_7</parameter>
+   <parameter name="expected-result-7">[true]</parameter>
+
+   <!-- test_case_8 -->
+   <parameter name="test-case-8">test_case_PL-DID-SWFU-1211_8</parameter>
+   <parameter name="expected-result-8">[true]</parameter>
+</configuration>
