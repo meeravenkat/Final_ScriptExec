@@ -1,17 +1,16 @@
+
+
+exit
 require 'socket'
 
 hostname = 'localhost'
 port = 2000
 SIZE = 1024 * 1024 * 10
-CWD = Dir.pwd
 
-# server = TCPSocket.open(hostname, port)
+socket = TCPSocket.new(hostname, port)
+arrayList = 'A,PL-UIDDA-1784'
+socket.write(arrayList)
 
-# send = server.puts("dir")
-# response = server.read
-# puts response
-
-# server.close
 arrFiles = []
 server = TCPSocket.open(hostname, port)
 dir_path = 'C:\p4\test\plumtest\15_0\DEV\MeeraV\automation\TestScripts\DDA\S31'
